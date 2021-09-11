@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(XylophoneApp());
+import 'package:xylophone/views/home.dart';
 
-class XylophoneApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Container(),
-        ),
-      ),
-    );
-  }
+void main() {
+  runApp(const MaterialApp(
+    home: home(),
+  ));
 }
